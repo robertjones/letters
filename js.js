@@ -25,7 +25,7 @@ const abc = [
   {ltr: 'v', pic: '🎻'}, 
   {ltr: 'w', pic: '🐋'}, 
   // {ltr: 'x', pic: 'x'}, 
-  {ltr: 'y', pic: '🟨'}, 
+  {ltr: 'y', pic: '🪀'}, 
   {ltr: 'z', pic: '🦓'}, 
 ]
 
