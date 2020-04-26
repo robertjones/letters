@@ -59,8 +59,8 @@ const numclick = (option, ans) => {
 var Game = {
   view: () => {
     return m("div", [
-      m("p", {class: "my-3", style: "font-size: 12rem;"}, prob.ans.pic),
-      m("table", {class: "self-center mx-auto my-3"},  
+      m("p", {class: "my-1", style: "font-size: 12rem;"}, prob.ans.pic),
+      m("table", {class: "self-center mx-auto my-2"},  
         m("tr", prob.options.map(option => m("td",  {class: "p-1"}, m("button", {onclick: () => numclick(option.ltr, prob.ans.ltr), class: dis.includes(option.ltr) ? "bg-red-500 hover:bg-red-700 text-white font-bold text-4xl w-16 py-2 rounded" : "bg-blue-500 hover:bg-blue-700 text-white font-bold text-4xl w-16 py-2 rounded"}, dis.includes(option.ltr) ? "_" : option.ltr)))
         )
       ),
