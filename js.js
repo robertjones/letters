@@ -50,11 +50,10 @@ const click = (option, ans) => {
   if (option == ans) {
     if (letters.length <= 5) {
       letters = abc.slice()
-      console.log("letters replaced")
     }
     letters.splice(letters.indexOf(ans), 1)
     prob = probgen(letters)
-    msg = msg == "☹️" ? "😃" : msg + "😃"
+    msg = msg == "☹️" ? ("😃" + ans.pic) : "😃" + ans.pic + msg 
     dis = []
   } else {
     msg = "☹️"
@@ -82,7 +81,7 @@ var Game = {
           )
         )
       ),
-      m("p", {class: "text-6xl"}, msg)
+      m("p", {class: "text-5xl"}, msg)
     ])
   }
 }
